@@ -1,0 +1,67 @@
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:background="@drawable/background_with_stroke"
+    android:padding="16dp"
+    android:layout_margin="5dp">
+
+    <!-- Imagen cuadrada arriba -->
+    <ImageView
+        android:id="@+id/productImage"
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        android:scaleType="centerCrop"
+        android:src="@drawable/ic_launcher_background" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center">
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_weight="1">
+            <!-- Código SKU -->
+            <TextView
+                android:id="@+id/skuTextView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:text="SKU: XYZ123"
+                android:textSize="16sp"
+                android:textColor="@android:color/black" />
+
+            <!-- Nombre del producto -->
+            <TextView
+                android:id="@+id/productNameTextView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="4dp"
+                android:text="Nombre del Producto"
+                android:textSize="18sp"
+                android:textColor="@android:color/black" />
+        </LinearLayout>
+        <!-- Icono de carrito de compras -->
+        <ImageView
+            android:id="@+id/shoppingCartIcon"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_marginTop="8dp"
+            android:src="@drawable/ic_car"
+            app:tint="?attr/colorPrimaryDark" />
+
+        <!-- Icono de corazón favorito -->
+        <ImageView
+            android:id="@+id/favoriteIcon"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_marginTop="8dp"
+            android:src="@drawable/ic_fav"
+            app:tint="?attr/colorPrimaryDark" />
+    </LinearLayout>
+</LinearLayout>
